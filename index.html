@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora con JavaScript</title>
+    <link rel="stylesheet" href="nuevosestilos.css" />
+  </head>
+
+  <body onload="init();">
+    <main class="calculadora" aria-label="Calculadora">
+      <div class="display" role="textbox" aria-live="polite">
+        <span id="resultado" aria-label="Resultado">0</span>
+      </div>
+      <div class="botones" role="group" aria-label="Teclado de la calculadora">
+        <button id="siete" class="numero" aria-label="Siete">7</button>
+        <button id="ocho" class="numero" aria-label="Ocho">8</button>
+        <button id="nueve" class="numero" aria-label="Nueve">9</button>
+        <button id="division" class="operador" aria-label="División">/</button>
+
+        <button id="cuatro" class="numero" aria-label="Cuatro">4</button>
+        <button id="cinco" class="numero" aria-label="Cinco">5</button>
+        <button id="seis" class="numero" aria-label="Seis">6</button>
+        <button
+          id="multiplicacion"
+          class="operador"
+          aria-label="Multiplicación"
+        >
+          *
+        </button>
+
+        <button id="uno" class="numero" aria-label="Uno">1</button>
+        <button id="dos" class="numero" aria-label="Dos">2</button>
+        <button id="tres" class="numero" aria-label="Tres">3</button>
+        <button id="resta" class="operador" aria-label="Resta">-</button>
+
+        <button id="cero" class="numero" aria-label="Cero">0</button>
+        <button id="reset" class="operador" aria-label="Reiniciar">C</button>
+        <button id="igual" class="operador" aria-label="Igual">=</button>
+        <button id="suma" class="operador" aria-label="Suma">+</button>
+      </div>
+      <div id="creditos">Regis Mateo</div>
+    </main>
+    <script src="operaciones.js"></script>
+  </body>
+</html>
